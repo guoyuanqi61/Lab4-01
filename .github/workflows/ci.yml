@@ -27,7 +27,7 @@ jobs:
     
     - name: Generate documentation
       run: |
-        poetry run pdoc --html pygraph -o docs/
+        poetry run pdoc --html pygraph -o docs/ --force
         ls docs/
     
     - name: Upload coverage report
